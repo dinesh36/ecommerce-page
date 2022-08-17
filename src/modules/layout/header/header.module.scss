@@ -1,0 +1,13 @@
+@import '../../../assets/scss/variables.scss';
+
+.header{
+  padding: 40px 40px;
+  border-bottom: 1px solid #828282;
+  .title{
+    font-size: 18px;
+    font-weight: 500;
+    .primaryColor{
+      color: $primary-color;
+    }
+  }
+}

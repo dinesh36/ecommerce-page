@@ -1,0 +1,19 @@
+$primary-color: #426dff;
+$secondary-color: #F6F6F6;
+$black-font:#0D1A3A;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$mobile-width: 480px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
