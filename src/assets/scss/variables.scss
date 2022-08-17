@@ -1,10 +1,20 @@
-$primary-color: #426dff;
+$primary-color: #8091A5;
 $secondary-color: #F6F6F6;
 $black-font:#0D1A3A;
+$grey-light-color: #F5F5F5;
+$grey-light-color-f1: #F1F3F6;
+$grey-dark-color: #C0C8D2;
+$white-color: #FFFFFF;
+$black-color: #000000;
+$blue-color: #254FE2;
+
 
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $mobile-width: 480px;
+
+$primary-font: 'Roboto', sans-serif;
+$SourceSansPro : 'Source Sans Pro', sans-serif;
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
