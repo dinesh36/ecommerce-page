@@ -1,7 +1,5 @@
 # Ecommerce Page
 
-## [Demo](https://personality-test.raimp.com)
-
 ## run application locally
 
 ```bash
