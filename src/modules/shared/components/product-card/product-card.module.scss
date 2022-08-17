@@ -1,0 +1,104 @@
+@import '../../../../assets/scss/variables';
+
+.card{
+  width: 22.313rem;
+  border-right: 2px solid $grey-light-color;
+  padding: 10px 24px;
+  position: relative;
+  .imgContainer{
+    width: 18.375rem;
+    img{
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .content{
+    text-align: center;
+    h1{
+      font: normal normal normal 20px/25px $primary-font;
+    }
+    span{
+      font-size: 14px;
+      color: $black-color;
+      background-color: $grey-light-color-f1;
+      padding: 5px;
+    }
+  }
+  .action{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    img{
+      width: 1.75rem;
+      display: block;
+      margin: auto;
+    }
+    button{
+      width: 3rem;
+      height: 3rem;
+      box-shadow: 0 3px 10px #00000029;
+      border-radius: 100%;
+      padding: 5px;
+      border: 0;
+      outline: none;
+      background-color: $white-color;
+      &:nth-child(2) {
+        margin-top: 10px;
+      }
+    }
+  }
+  .flashSale{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    .flashSaleContent{
+      position: relative;
+      .shoppingIcon, h6{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .shoppingIcon{
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 100%;
+        padding: 5px;
+        background-color: $white-color;
+        z-index: 1;
+        img{
+          width: 2.375rem;
+          margin: auto;
+        }
+        span{
+          width: 1.313rem;
+          height: 1.313rem;
+          background-color: $black-color;
+          color: $white-color;
+          border-radius: 100%;
+          position: absolute;
+          right: 1px;
+          bottom: 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          letter-spacing: -0.5px;
+          font: normal normal 600 12px/18px $SourceSansPro;
+
+        }
+      }
+      h6{
+        background-color: $grey-light-color-f1;
+        border-radius: 0 6px 6px 0;
+        color: $black-color;
+        font-family: $primary-font;
+        font-size: 1rem;
+        width: max-content;
+        padding: 4.5px 10px;
+        left: 2.313rem;
+        top: .313rem;
+        margin: 0;
+      }
+    }
+  }
+}
