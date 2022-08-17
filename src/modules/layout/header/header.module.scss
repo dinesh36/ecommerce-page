@@ -1,13 +1,165 @@
 @import '../../../assets/scss/variables.scss';
 
-.header{
-  padding: 40px 40px;
-  border-bottom: 1px solid #828282;
-  .title{
-    font-size: 18px;
-    font-weight: 500;
-    .primaryColor{
-      color: $primary-color;
+.header {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 0px 0px 13px 0px;
+  background: black;
+  color: white;
+  height: 72px;
+  font-family: Lombok;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1;
+
+  .logo {
+    height: 48px;
+    text-align: right;
+    font-size: 36px;
+    line-height: 36px;
+    flex: 0 0 142px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .thin, .fat {
+      flex-basis: 0;
+    }
+
+    .thin {
+      font-weight: 100;
+    }
+
+    .fat {
+      font-weight: 300;
+    }
+  }
+
+  .centerPart {
+    display: flex;
+    .leftMenu, .rightMenu {
+      flex-basis: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .leftMenu{
+      margin-left: 142px;
+    }
+
+    .rightMenu{
+      margin-left: 36px;
+    }
+
+    .menuItem {
+      display: flex;
+      flex-basis: 0;
+      margin-right: 35px;
+      align-items: center;
+      &[data-alt="Trending"]{
+        margin-right: 33px;
+      }
+      &[data-alt="Cart"]{
+        margin-right: 44px;
+      }
+      .menuIcon {
+        height: 32px;
+        width: 32px;
+        &[alt="Cart"]{
+          height: 34px;
+          width: 34px;
+        }
+      }
+      .menuTitle{
+        margin-left: 12px;
+        font-size: 18px;
+        font-weight: 200;
+        white-space: nowrap;
+      }
+    }
+
+    .searchContainer{
+      display: flex;
+      flex: 1;
+      background: white;
+      border-radius: 5px;
+      button{
+        display: flex;
+        flex-basis: 0;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: transparent;
+        img{
+          height: 10px;
+          width: 10px;
+        }
+      }
+      .filterContainer{
+        background: #C0C8D2;
+        border-radius: 5px 0px 0px 5px;
+        height: 48px;
+        width: 64px;
+        padding: 0px 15px;
+        img{
+          height: 34px;
+          width: 34px;
+        }
+      }
+      .searchIconContainer{
+        padding: 0px 20px;
+        img{
+          height: 26px;
+          width: 26px;
+        }
+      }
+      .closeIconContainer{
+        padding: 0px 8px;
+        img{
+          height: 32px;
+          width: 32px;
+        }
+      }
+
+      input{
+        border:0px;
+        color: black;
+        font-size: 18px;
+        flex: 1;
+        outline: none;
+      }
+    }
+  }
+
+  .userAvatarContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    flex: 0 0 116px;
+    color: black;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    position: relative;
+    border-radius: 0px 0px 13px 0px;
+    img{
+      height: 32px;
+      width: 32px;
+    }
+    &:before{
+      content: ' ';
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right:15px solid white;
+      position: absolute;
+      left: -15px;
+      top: 37px;
     }
   }
 }
