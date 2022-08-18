@@ -1,0 +1,65 @@
+.container{
+  width: 100%;
+  display: flex;
+}
+.conditionBox{
+  border:1px solid gray;
+  border-radius: 5px;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 10px;
+  width: fit-content;
+  padding: 3px;
+}
+.colorBoxContainer{
+  width: 100%;
+  display: flex;
+}
+.colorHeading{
+  margin-top: 10px;
+}
+.colorBox{
+  height: 70px;
+  width: 70px;
+  border:1px solid black;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.color1{
+  width: 40px;
+  height: 40px;
+  margin:5px auto;
+  border:1px solid blue;
+  border-radius: 50%;
+  background-color: blue;
+}
+.colorName{
+  text-align: center;
+}
+
+.color2{
+  width: 40px;
+  height: 40px;
+  margin:5px auto;
+  border:1px solid green;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.color3{
+  width: 40px;
+  height: 40px;
+  margin:5px auto;
+  border:1px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.color4{
+  width: 40px;
+  height: 40px;
+  margin:5px auto;
+  border:1px solid orange;
+  border-radius: 50%;
+  background-color: orange;
+}

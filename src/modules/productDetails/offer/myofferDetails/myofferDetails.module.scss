@@ -1,0 +1,80 @@
+.mainPart{
+  width: 100%;
+}
+.container{
+  margin: 20px auto;
+  width: 90%;
+}
+.offerHeading{
+  display: flex;
+}
+
+.equalWidth{
+  width:30%;
+}
+.myOfferDetailsHeading{
+  width: 45%;
+  font-size: 20px;
+  text-align: center;
+}
+.hr{
+  margin-top: 15px;
+}
+.responseHeader{
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+.label{
+  width: 20%;
+  height: 40px;
+  margin: 0px;
+}
+.specifyLabel{
+  display: flex;
+}
+.specifyLabelSize{
+  font-size: 10px;
+  color:gray;
+  width: 70%;
+  height: 12px;
+}
+.specifyLabelIcon{
+  width: 30%;
+  height: 12px;
+}
+.iconSize{
+  width: 10px;
+  margin-top: -9px;
+  margin-left: 13px;
+}
+.responseHeaderSize{
+  font-size: 13px;
+  height: 20px;
+}
+.timeLineHeadingSize{
+  font-size: 10px;
+  margin-top: -5px;
+  margin-left: 45px;
+}
+.selectBox{
+  margin-left: 5px;
+  width: 35%;
+}
+.selectOption{
+  padding: 10px;
+  text-align: center;
+}
+.selectBoxForQuantity{
+  margin-left: 5px;
+  width: 71%;
+}
+.selectOptionForQuantity{
+  padding: 10px;
+  text-align: center;
+}
+.deleteQuantity{
+  width: 6%;
+  margin-left: 10px;
+  margin-top: 5px;
+}

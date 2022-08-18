@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './home.module.scss';
 import Container from '../shared/components/container/container';
 import ProductCard from '../shared/components/product-card/product-card';
+import ProductDetails from '../productDetails/productDetails';
 
 import cs from '../../../Images/products/cs@2x.png';
 
@@ -18,6 +19,15 @@ export default function Home() {
     },
     {
       id: 2,
+      title: 'SAMSUNG Galaxy S20 FE 5G Factory Unlocked Android Cell',
+      minPrice: '$18299',
+      maxPrice: '$28399',
+      flashSale: 'Jan 08, Fri, 00:00 PM',
+      flashSaleItems: '+2',
+      images: cs.src,
+    },
+    {
+      id: 3,
       title: 'SAMSUNG Galaxy S20 FE 5G Factory Unlocked Android Cell',
       minPrice: '$18299',
       maxPrice: '$28399',
@@ -56,6 +66,8 @@ export default function Home() {
             />
           ))}
         </div>
+        <hr />
+        <ProductDetails />
       </Container>
     </div>
   );
